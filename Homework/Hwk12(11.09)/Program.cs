@@ -50,8 +50,6 @@ int E = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int F = Convert.ToInt32(Console.ReadLine());
 
-
-
 int Exponent(int E, int F)
 {
    int result = 1;
