@@ -4,4 +4,20 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
-int num = new Random().Next(100,1000);
+Console.Write("Введите значение длинны массива чисел от 1 до 100: ");
+int size = Convert.ToInt32(Console.ReadLine());
+
+int[] GetArray(int size)
+{
+    int[] array = new int[size];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(1,101);
+        
+    }
+    return array;
+}
+
+int[] resultArray = GetArray(size);
+
+Console.WriteLine($"Созданный массив, длинной {size} элементов: [{String.Join(", ", resultArray)}]");
