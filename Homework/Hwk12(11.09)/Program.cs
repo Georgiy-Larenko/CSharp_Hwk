@@ -16,9 +16,10 @@ Console.Write($"Результат возведения числа {a} в сте
 Console.WriteLine();
 
 
+
 // Или 
 
-Console.WriteLine();
+
 
 Console.Write("Введите первое число: ");
 int c = Convert.ToInt32(Console.ReadLine());
@@ -35,4 +36,30 @@ for (int start = 1; start <= d; start++)
 
 }
 
+Console.WriteLine();
 
+
+
+// Или
+
+
+
+Console.Write("Введите первое число: ");
+int E = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите второе число: ");
+int F = Convert.ToInt32(Console.ReadLine());
+
+
+
+int Exponent(int E, int F)
+{
+   int result = 1;
+   for (int i = 1; i <= F; i++)
+   {
+      result = result*E;
+   }
+   return result;
+}
+
+Console.WriteLine($"Результат возведения числа {E} в степень {F}: {Exponent(E,F)} ");
