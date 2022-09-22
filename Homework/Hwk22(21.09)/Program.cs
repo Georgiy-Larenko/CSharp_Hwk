@@ -45,10 +45,10 @@ PrintArray(result);
 Console.WriteLine();
 
 Console.Write("Среднее арифметическое каждого столбца: ");
-for (int i = 0; i < result.GetLength(0); i++)
+for (int i = 0; i < result.GetLength(1); i++)
 {
     double avrg = 0;
-    for (int j = 0; j < result.GetLength(1); j++)
+    for (int j = 0; j < result.GetLength(0); j++)
     {
         avrg = avrg + result [i,j] ;
     }
